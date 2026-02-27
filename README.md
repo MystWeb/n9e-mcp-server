@@ -57,7 +57,7 @@ Add to your `~/.cursor/mcp.json`:
 }
 ```
 
-### 3. Restart OpenCode or Other Client Processes to Use
+### 3. Restart Cursor or Other Client Processes to Use
 
 ## Available Tools
 
