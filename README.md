@@ -88,7 +88,7 @@ The official code uses the `stdio` protocol by default for inter-process communi
    - **Connection Type**: Streamable HTTP (SSE)
    - **URL**: `http://<Your-Server-IP>:8082/sse`
 
-> **Developer Note**: If you have modified the source code and wish to build a local test image, change the `dockerfile` field in `docker-compose.yml` to `docker/Dockerfile.source`. This will automatically copy all source code and execute the complete local TS build process.
+> **Developer Note**: If you have modified the source code and wish to build a local test image, change the `dockerfile` field in `docker-compose.yml` to `docker/Dockerfile.source`. This will copy the repository source into the image, run the project's normal Go build process (via the repository build/Makefile flow), and then start the server using the image's configured runtime entrypoint.
 
 ### 3. Restart Cursor or Other Client Processes to Use
 
