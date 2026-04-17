@@ -1,9 +1,9 @@
 services:
   n9e-mcp-server:
     build: 
-      context: .. # 指向项目根目录作为构建上下文
-      dockerfile: docker/Dockerfile # 默认使用 NPM 安装模式
-      # dockerfile: docker/Dockerfile.source # 开发者可取消注释，使用源码编译模式
+      context: . # 使用 docker 目录作为构建上下文，确保 docker/.dockerignore 生效
+      dockerfile: Dockerfile # 默认使用 NPM 安装模式
+      # dockerfile: Dockerfile.source # 开发者可取消注释，使用源码编译模式
       args:
         # 指定需要的版本号，如 "0.1.1"。留空或 latest 则拉取最新版
         MCP_VERSION: "latest"
