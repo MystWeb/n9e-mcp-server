@@ -87,7 +87,7 @@
    - **连接方式**：基于 HTTP 的流式连接 (SSE)
    - **URL**：`http://<您的服务器IP>:8082/sse`
 
-> **开发者说明**：若您修改了源代码并希望构建本地测试镜像，请在 `docker-compose.yml` 中将 `dockerfile` 字段修改为 `docker/Dockerfile.source`，它会自动拷贝所有源码并执行完整的本地 TS 编译流程。
+> **开发者说明**：若您修改了源代码并希望构建本地测试镜像，请在 `docker-compose.yml` 中将 `dockerfile` 字段修改为 `docker/Dockerfile.source`。该 Dockerfile 会自动拷贝所有源码，执行 Go 项目的本地构建流程（如 `make build` 或 `go build`），并按镜像默认入口启动服务。
 
 ### 3.重启 Cursor 等进程，即可使用
 
