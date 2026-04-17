@@ -72,7 +72,7 @@ The official code uses the `stdio` protocol by default for inter-process communi
    
 2. Modify the configuration in `docker-compose.yml`:
 
-   - `MCP_VERSION`: (Optional) Specify the version in `build.args`, e.g., `0.1.1`. Defaults to `latest` if left blank.
+   - `MCP_VERSION`: (Optional) Set this explicitly in `build.args` to `latest` or to a concrete version such as `0.1.1`. Do not leave it blank.
    - `N9E_BASE_URL`: Replace with your actual Nightingale API URL.
    - `N9E_TOKEN`: Replace with your generated API Token.
 
