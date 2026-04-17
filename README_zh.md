@@ -71,7 +71,7 @@
 
 2. 修改 `docker-compose.yml` 中的配置：
 
-   - `MCP_VERSION`: (可选) 在 `build.args` 中指定版本号，如 `0.1.1`，留空或 `latest` 则拉取最新版。
+   - `MCP_VERSION`: (可选) 在 `build.args` 中显式指定版本号，如 `0.1.1`；如需拉取最新版，请填写 `latest`，不要留空。
    - `N9E_BASE_URL`: 替换为夜莺的实际 API 地址。
    - `N9E_TOKEN`: 替换为您生成的 API Token。
 
