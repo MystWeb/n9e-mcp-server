@@ -19,8 +19,5 @@ services:
     ports:
       - "8082:8082"
     # 增加资源限制，保障宿主机稳定性
-    deploy:
-      resources:
-        limits:
-          cpus: '0.5'
-          memory: 512M
+    cpus: '0.5'
+    mem_limit: 512M
